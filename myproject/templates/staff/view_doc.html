@@ -1,0 +1,55 @@
+{% extends 'staff/layout.html' %}
+
+{% block content %}
+
+<main class="content">
+<div class="container-fluid p-0">
+
+					
+
+					<div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Documents DataTables</h5>
+									<h6 class="card-subtitle text-muted">Stored all the requaired details of Documents</h6>
+								</div>
+								<div class="card-body">
+									<table id="datatables-reponsive" class="table table-striped" style="display: block; overflow-x: auto; white-space: nowrap; table-layout: fixed; width: 100%;">
+										<thead>
+											<tr>
+												<th>Document ID</th>
+												<th>Title</th>
+												<th>Document</th>
+												<th>Client</th>
+												<th>Case</th>
+												<!-- <th>Description</th> -->
+												<th> </th>
+												<th> </th>
+												<th> </th>
+											</tr>
+										</thead>
+										<tbody>
+											{% for row in result %}
+												<tr>
+													<td>{{row.id}}</td>
+													<td>{{row.title}}</td>
+													<td>{{row.document}}</td>
+													<td>{{row.client_id}}</td>
+													<td>{{row.cases_id}}</td>
+													<!-- <td>{{row.status}}</td> -->
+													<!-- <td>{{row.state}}</td> -->
+													<td><a href="/staff/view/{{row.id}}">View</a></td>
+													<td><a href="/staff/doc_delete/{{row.id}}">delete</a></td>
+													<td><a href="/staff/doc_edit/{{row.id}}">edit</a></td>
+												</tr>
+											{% endfor %}
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div></main>
+{% endblock %}

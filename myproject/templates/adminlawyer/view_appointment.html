@@ -1,0 +1,91 @@
+{% extends 'adminlawyer/layout.html' %}
+
+{% block content %}
+
+<main class="content">
+<div class="container-fluid p-0">
+
+					
+
+					<div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Requests of Appointment</h5>
+									<h6 class="card-subtitle text-muted">Appointment requested by clients!!</h6>
+								</div>
+								<div class="card-body">
+									<table id="datatables-reponsive" class="table table-striped" style="display: block; overflow-x: auto; white-space: nowrap; table-layout: fixed; width: 100%;">
+										<thead>
+											<tr>
+												<th>Appointment ID</th>
+												<th>Lawyer</th>
+												<th>Client</th>
+												<th>Date</th>
+												<th>Time</th>
+												<th> </th>
+												<th> </th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Jashmin Desai</td>
+												<td>Harsh Shah</td>
+												<td>24/12/2005</td>
+												<td>01:00 PM</td>
+												<td><button type="submit" class="btn btn-primary" style="font-size:0.8rem; background-color: #4bbf73; border-color: #4bbf73;">Approve</button></td>
+												<td><button type="submit" class="btn btn-primary" style="font-size:0.8rem;
+												background-color: #d9534f; border-color: #d9534f;">Reject</button></td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Preet Kevadiya</td>
+												<td>Jenny Dsouza</td>
+												<td>17/10/2010</td>
+												<td>03:00 PM</td>
+												<td><button type="submit" class="btn btn-primary" style="font-size:0.8rem; background-color: #4bbf73; border-color: #4bbf73;">Approve</button></td>
+												<td><button type="submit" class="btn btn-primary" style="font-size:0.8rem;
+												background-color: #d9534f; border-color: #d9534f;">Reject</button></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Rakesh Acharya</td>
+												<td>Mittal Kadiya</td>
+												<td>11/03/2015</td>
+												<td>01:00 PM</td>
+												<td><button type="submit" class="btn btn-primary" style="font-size:0.8rem; background-color: #4bbf73; border-color: #4bbf73;">Approve</button></td>
+												<td><button type="submit" class="btn btn-primary" style="font-size:0.8rem;
+												background-color: #d9534f; border-color: #d9534f;">Reject</button></td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>Sanjay Gajenda</td>
+												<td>Vivek Shah</td>
+												<td>27/08/2019</td>
+												<td>06:00 PM</td>
+												<td><button type="submit" class="btn btn-primary" style="font-size:0.8rem; background-color: #4bbf73; border-color: #4bbf73;">Approve</button></td>
+												<td><button type="submit" class="btn btn-primary" style="font-size:0.8rem;
+												background-color: #d9534f; border-color: #d9534f;">Reject</button></td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>Jeet Raval</td>
+												<td>Sunitra Mehata</td>
+												<td>14/11/2002</td>
+												<td>04:00 PM</td>
+												<td><button type="submit" class="btn btn-primary" style="font-size:0.8rem; background-color: #4bbf73; border-color: #4bbf73;">Approve</button></td>
+												<td><button type="submit" class="btn btn-primary" style="font-size:0.8rem;
+												background-color: #d9534f; border-color: #d9534f;">Reject</button></td>
+											</tr>
+											
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div></main>
+{% endblock %}
